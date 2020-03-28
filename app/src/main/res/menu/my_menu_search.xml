@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search_mine"
+        android:title="Search"
+        android:icon="@drawable/ic_search_grey"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item
+        android:id="@+id/action_filter"
+        android:title="Filter"
+        android:icon="@drawable/filter"
+        app:showAsAction="ifRoom|collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/sortBy_filter"
+                android:title="Sort By"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:id="@+id/price_filter"
+                        android:title="Price"
+                        app:showAsAction="never"/>
+                    <item
+                        android:id="@+id/Rank_filter"
+                        android:title="Rank"
+                        app:showAsAction="never"/>
+                    <item
+                        android:id="@+id/Date_Sort_filter"
+                        android:title="Date"
+                        app:showAsAction="never"/>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/filterBy"
+                android:title="FilterBy"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:id="@+id/date_created"
+                        android:title="Date Created"
+                        app:showAsAction="never"/>
+                    <item
+                        android:id="@+id/price_between"
+                        android:title="Price Between"
+                        app:showAsAction="never"/>
+                    <item
+                        android:id="@+id/Status"
+                        android:title="Status"
+                        app:showAsAction="never"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>
